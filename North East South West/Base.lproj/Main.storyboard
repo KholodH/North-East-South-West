@@ -1,24 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUp-Eq-hmh">
+                                <rect key="frame" x="132" y="74" width="150" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="AZb-AG-xNH"/>
+                                    <constraint firstAttribute="height" constant="70" id="YpT-P8-zpO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="North">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="SmJ-c5-lgY" kind="presentation" id="dTI-dw-bNP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZQ-Na-IKE">
+                                <rect key="frame" x="139" y="778" width="150" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="South">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="SmJ-c5-lgY" kind="presentation" id="xQ3-Qk-RXi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpo-Iy-Xty">
+                                <rect key="frame" x="20" y="413" width="102" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="8VE-GP-8dq"/>
+                                    <constraint firstAttribute="height" constant="70" id="puW-4i-ler"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="West">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="SmJ-c5-lgY" kind="presentation" id="PTW-YP-U60"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VA-y5-1dP">
+                                <rect key="frame" x="292" y="413" width="102" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="nLw-3W-72L"/>
+                                    <constraint firstAttribute="height" constant="70" id="tz9-yS-z9p"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="East">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="SmJ-c5-lgY" kind="presentation" id="Wiv-qB-tlR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compas" translatesAutoresizingMaskIntoConstraints="NO" id="GrN-2B-x4U">
+                                <rect key="frame" x="148" y="330" width="118" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="iQp-G4-kLp"/>
+                                    <constraint firstAttribute="width" constant="118" id="ldQ-vG-9H3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0VA-y5-1dP" secondAttribute="trailing" constant="20" id="31f-DM-jrb"/>
+                            <constraint firstItem="bUp-Eq-hmh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="5uS-Pa-EPt"/>
+                            <constraint firstItem="bUp-Eq-hmh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Wp-z5-mrK"/>
+                            <constraint firstItem="kpo-Iy-Xty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QhA-HQ-Z45"/>
+                            <constraint firstItem="GrN-2B-x4U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T7v-Nb-kJt"/>
+                            <constraint firstItem="0VA-y5-1dP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X4h-D6-ivk"/>
+                            <constraint firstItem="0VA-y5-1dP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yyh-W1-Taz"/>
+                            <constraint firstItem="GrN-2B-x4U" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oIh-Oa-XhL"/>
+                            <constraint firstItem="kpo-Iy-Xty" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yRh-Ws-Xpj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dircButton" destination="mZQ-Na-IKE" id="chF-DT-S8t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1930.4347826086957" y="-69.642857142857139"/>
+        </scene>
+        <!--Other Ui View View Controller-->
+        <scene sceneID="wZH-Ih-m0c">
+            <objects>
+                <viewController id="SmJ-c5-lgY" customClass="OtherUiViewViewController" customModule="North_East_South_West" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qce-Xz-bnO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7q-yN-JM3">
+                                <rect key="frame" x="107" y="371" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="O8y-rG-EEf"/>
+                                    <constraint firstAttribute="width" constant="200" id="qrm-Ea-Nio"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="back">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="sFf-gL-PT5" kind="unwind" unwindAction="myunwindSegueWithUnwindSegue:" id="gDn-Pb-SBb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IaA-S3-myB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b7q-yN-JM3" firstAttribute="centerX" secondItem="Qce-Xz-bnO" secondAttribute="centerX" id="rHx-j6-bJV"/>
+                            <constraint firstItem="b7q-yN-JM3" firstAttribute="centerY" secondItem="Qce-Xz-bnO" secondAttribute="centerY" id="rdE-45-UwZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BackButton" destination="b7q-yN-JM3" id="zcS-Mj-BLi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSY-g0-N6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sFf-gL-PT5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-609" y="-62"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xQ3-Qk-RXi"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="compas" width="317" height="429"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
